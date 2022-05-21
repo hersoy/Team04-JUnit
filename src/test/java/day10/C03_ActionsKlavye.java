@@ -34,8 +34,9 @@ public class C03_ActionsKlavye extends TestBase {
                 sendKeys("may").sendKeys(Keys.TAB).
                 sendKeys("1990").sendKeys(Keys.TAB).sendKeys(Keys.TAB).
                 sendKeys(Keys.RIGHT).
-                moveToElement(driver.findElement(By.xpath("(//button[@type='submit'])[2]")))
-        .click().perform();
+                sendKeys(Keys.TAB).sendKeys(Keys.TAB).
+                sendKeys(Keys.TAB).sendKeys(Keys.TAB).
+                sendKeys(Keys.ENTER).perform();
 
 
     }
